@@ -1,3 +1,5 @@
+import sys
+
 import diskcache
 
-cache = diskcache.Cache("cache", size_limit=1e9)
+cache = diskcache.Cache("cache", size_limit=sys.maxsize)
